@@ -1,0 +1,129 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    background-size: cover;
+}
+
+.main {
+    display: grid;
+    width: 100%;
+    grid-row: 20% auto;
+}
+
+.title {
+    margin: 20px;
+    margin-left: 10px;
+    font-size: 60px;
+}
+
+button.add-btn {
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    outline: 0;
+}
+
+button.confirm-btn,
+button.delete-btn,
+button.change-btn,
+button.submit-btn {
+    outline: 0;
+    background: 0;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button.delete-btn,
+button.change-btn,
+button.submit-btn {
+    margin-left: 10px;
+}
+
+.form {
+    display: none;
+    padding: 15px;
+    position: relative;
+}
+
+tr td:first-child {
+    width: 70%;
+    position: relative;
+}
+
+table {
+    margin-left: 10px;
+}
+
+.active {
+    font-size: 18px;
+    font-family: sans-serif;
+    display: block;
+    border: 2px solid rgb(99, 133, 19);
+    padding: 5px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.active:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(65, 45, 45, 0.2);
+}
+
+div.event-desc {
+    display: inline-block;
+}
+
+input.add-task {
+    width: 220px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 2px solid red;
+    background: 0;
+    color: whitesmoke;
+}
+
+.confirm-btn {
+    position: absolute;
+    bottom: 12px;
+    margin-left: 20px;
+}
+
+span {
+    transition: opacity .8s .5s ease;
+}
+
+.deleted-span {
+    opacity: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: block;
+    border: 2px solid rgba(226, 31, 31, 0.959);
+    padding: 5px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    pointer-events: none;
+}
+
+.change-input {
+    font-size: 18px;
+    font-family: sans-serif;
+    display: block;
+    border: 2px solid rgb(99, 133, 19);
+    padding: 5px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    position: relative;
+    background: none;
+    outline: none;
+}
