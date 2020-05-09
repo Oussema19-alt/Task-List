@@ -28,6 +28,7 @@ button.add-btn {
     outline: 0;
 }
 
+button.deny-btn,
 button.confirm-btn,
 button.delete-btn,
 button.change-btn,
@@ -46,7 +47,7 @@ button.submit-btn {
 }
 
 .form {
-    display: none;
+    transform: translateX(-100%);
     padding: 15px;
     position: relative;
 }
@@ -85,9 +86,9 @@ input.add-task {
     width: 220px;
     border: 0;
     outline: 0;
-    padding: 10px;
-    font-size: 15px;
-    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    font-size: 19px;
+    border-bottom: 2px solid rgba(31, 226, 96, 0.959);
     background: 0;
     color: whitesmoke;
 }
@@ -96,6 +97,12 @@ input.add-task {
     position: absolute;
     bottom: 12px;
     margin-left: 20px;
+}
+
+.deny-btn {
+    position: absolute;
+    bottom: 12px;
+    margin-left: 130px;
 }
 
 span {
