@@ -1,14 +1,19 @@
 //Form Display
-
+console.time();
 (() => {
     const addBtn = document.querySelector('button.add-btn');
     const form = document.querySelector('div.form');
     addBtn.addEventListener('click', () => {
-        form.style.display = (form.style.display == "none" || form.style.display == "") ? "block" : "none";
+        gsap.to(form, { transform: "translateX(0%)", duration: .5, ease: "ease" });
     });
 })();
 
-//Input placeholder
+//Form Hide
+hideForm = () => {
+        const form = document.querySelector('div.form');
+        gsap.to(form, { transform: "translateX(-100%)", duration: .8, ease: "ease" })
+    }
+    //Input placeholder
 
 (() => {
     const input = document.querySelector('input.add-task');
@@ -90,3 +95,4 @@ gsap.from('*', { opacity: 0, duration: 1, y: -30, ease: "ease" });
 showSpan = tr => {
     gsap.from(tr, { opacity: 0, duration: .5, y: 30, ease: "ease" });
 };
+console.timeEnd();
